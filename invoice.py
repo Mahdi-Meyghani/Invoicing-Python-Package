@@ -4,7 +4,7 @@ from fpdf import FPDF
 from pathlib import Path
 
 
-def generate(invoices_path, pdfs_path, product_id_col, product_name_col,
+def generate(invoices_path, pdfs_path, logo_path, product_id_col, product_name_col,
              amount_purchased_col, price_per_unit_col, total_price_col):
     filepaths = glob.glob(f"{invoices_path}/*.xlsx")
 
@@ -59,6 +59,6 @@ def generate(invoices_path, pdfs_path, product_id_col, product_name_col,
         pdf.set_font(family="Times", size=16, style="B")
         pdf.cell(w=45, h=16, txt="Amazon Shopping")
 
-        pdf.image("logo.png", w=18, h=18)
+        pdf.image(logo_path, w=18, h=18)
 
         pdf.output(f"PDFs/{filename}.pdf")
