@@ -6,6 +6,7 @@ from pathlib import Path
 
 def generate(invoices_path, pdfs_path, logo_path, product_id_col, product_name_col,
              amount_purchased_col, price_per_unit_col, total_price_col):
+
     filepaths = glob.glob(f"{invoices_path}/*.xlsx")
 
     for filepath in filepaths:
@@ -61,4 +62,4 @@ def generate(invoices_path, pdfs_path, logo_path, product_id_col, product_name_c
 
         pdf.image(logo_path, w=18, h=18)
 
-        pdf.output(f"PDFs/{filename}.pdf")
+        pdf.output(f"{pdfs_path}/{filename}.pdf")
