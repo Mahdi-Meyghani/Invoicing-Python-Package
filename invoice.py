@@ -37,13 +37,13 @@ def generate(invoices_path, pdfs_path, product_id_col, product_name_col,
             pdf.set_font(family="Times", size=16)
             pdf.set_text_color(80, 80, 80)
 
-            pdf.cell(w=30, h=16, txt=str(row["product_id"]), border=1)
-            pdf.cell(w=70, h=16, txt=str(row["product_name"]), border=1)
-            pdf.cell(w=40, h=16, txt=str(row["amount_purchased"]), border=1)
-            pdf.cell(w=30, h=16, txt=str(row["price_per_unit"]), border=1)
-            pdf.cell(w=30, h=16, txt=str(row["total_price"]), border=1, ln=1)
+            pdf.cell(w=30, h=16, txt=str(row[product_id_col]), border=1)
+            pdf.cell(w=70, h=16, txt=str(row[product_name_col]), border=1)
+            pdf.cell(w=40, h=16, txt=str(row[amount_purchased_col]), border=1)
+            pdf.cell(w=30, h=16, txt=str(row[price_per_unit_col]), border=1)
+            pdf.cell(w=30, h=16, txt=str(row[total_price_col]), border=1, ln=1)
 
-        total_price = df["total_price"].sum()
+        total_price = df[total_price_col].sum()
 
         pdf.set_font(family="Times", size=16)
         pdf.cell(w=30, h=16, txt="", border=1)
