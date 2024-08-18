@@ -1,11 +1,16 @@
 from setuptools import setup
 
+with open("README.md", "r", encoding = "utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='excel-invoice-to-pdf',  #* Your package will have this name
     packages=['invoicing'],  #* Name the package again
-    version='1.0.0',  #* To be increased every time your change your library
+    version='1.0.2',  #* To be increased every time your change your library
     license='MIT',  # Type of license. More here: https://help.github.com/articles/licensing-a-repository
     description='Convert your Excel invoices into Pdf invoices.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     # Short description of your library
     author='Mahdi Meyghani',  # Your name
     author_email='mahdimeyghani02@gmail.com',  # Your email

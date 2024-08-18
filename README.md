@@ -80,6 +80,8 @@ You can check out the source code and additional documentation on PyPI:
 
 [excel-invoice-to-pdf on PyPI](https://pypi.org/project/excel-invoice-to-pdf/)
 
+[excel-invoice-to-pdf on Github](https://github.com/Mahdi-Meyghani/Invoicing-Python-Package/)
+
 Feel free to contribute and help improve the package!
 
 Enjoy using `excel-invoice-to-pdf`!

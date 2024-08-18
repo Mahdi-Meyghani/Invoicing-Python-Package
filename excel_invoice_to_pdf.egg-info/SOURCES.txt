@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 excel_invoice_to_pdf.egg-info/PKG-INFO
 excel_invoice_to_pdf.egg-info/SOURCES.txt
