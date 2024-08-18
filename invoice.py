@@ -71,7 +71,7 @@ def generate(invoices_path, pdfs_path, logo_image_path, product_id_col, product_
         pdf.cell(w=30, h=16, txt=f"Total price is: {total_price}", ln=1)
 
         pdf.set_font(family="Times", size=16, style="B")
-        pdf.cell(w=45, h=16, txt="Amazon Shopping")
+        pdf.cell(w=45, h=16, txt="Company Logo")
 
         pdf.image(logo_image_path, w=18, h=18)
 
