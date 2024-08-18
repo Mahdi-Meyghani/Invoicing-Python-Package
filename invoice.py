@@ -63,5 +63,5 @@ def generate(invoices_path, pdfs_path, logo_image_path, product_id_col, product_
 
         pdf.image(logo_image_path, w=18, h=18)
 
-        os.makedirs(pdfs_path)
+        os.makedirs(pdfs_path, exist_ok=True)
         pdf.output(f"{pdfs_path}/{filename}.pdf")
