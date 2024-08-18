@@ -7,6 +7,18 @@ import os
 
 def generate(invoices_path, pdfs_path, logo_image_path, product_id_col, product_name_col,
              amount_purchased_col, price_per_unit_col, total_price_col):
+    """
+    This function converts Excel invoices into PDFs invoices
+    :param invoices_path: name of the folder (path of the folder) where Excel invoices are stored
+    :param pdfs_path: name of the folder (path of the folder) where you want PDFS to be stored
+    :param logo_image_path: name of the logo image (path of thr logo image)
+    :param product_id_col: your column name which contains your product id
+    :param product_name_col: your column name which contains your product name
+    :param amount_purchased_col: your column name which contains your amount purchased
+    :param price_per_unit_col: your column name which contains your price per unit
+    :param total_price_col: your column name which contains your total price
+    :return: PDFs invoices (if PDFs folder path doesn't exist it will be created automatically)
+    """
 
     filepaths = glob.glob(f"{invoices_path}/*.xlsx")
 
