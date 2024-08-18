@@ -8,7 +8,7 @@ Author-email: mahdimeyghani02@gmail.com
 License: MIT
 Keywords: invoice,excel,pdf
 Classifier: Development Status :: 3 - Alpha
-Classifier: Intended Audience :: Developers :: Companies
+Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Build Tools
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3.8
